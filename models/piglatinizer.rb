@@ -8,6 +8,8 @@ class PigLatinizer
       if word[0].downcase =~ /[aeiou]/
         word = "#{word}way"
       elsif word[0].downcase == 'p'
+        if word[1].downcase == 'l' || word[1].downcase == 'r'
+          word = "#{word}"
       end
       puts word
       piglatinized_text += word
