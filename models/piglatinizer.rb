@@ -31,10 +31,6 @@ class PigLatinizer
           word = "#{word}#{word[0]}ay"
           word[0] = ''
         end
-      elsif word[0].downcase == 's' && word[1].downcase == 'k'
-        word = "#{word}#{word[0]}#{word[1]}ay"
-        word[0] = ''
-        word[0] = ''
       elsif word[0].downcase == 't' && word[1].downcase == 'h'
         word = "#{word}#{word[0]}#{word[1]}ay"
         word[0] = ''
