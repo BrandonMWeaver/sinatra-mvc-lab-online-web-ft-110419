@@ -5,9 +5,9 @@ class PigLatinizer
     words = text.split(' ')
     
     words.each do |word|
-      if word[0] =~ /[aeiou]/
+      if word[0].downcase =~ /[aeiou]/
         word = "#{word}way"
-      elsif
+      elsif word[0].downcase == 'p'
       end
       puts word
       piglatinized_text += word
