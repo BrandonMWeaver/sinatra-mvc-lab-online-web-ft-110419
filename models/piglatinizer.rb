@@ -11,7 +11,7 @@ class PigLatinizer
         if word[1].downcase == 'l' || word[1].downcase == 'r'
           word = "#{word}#{word[0]}#{word[1]}ay"
           word[0] = ''
-          word[1] = ''
+          word[0] = ''
         else
           word = "#{word}#{word[0]}ay"
           word[0] = ''
@@ -19,8 +19,8 @@ class PigLatinizer
       elsif word[0].downcase == 's' && word[1].downcase == 'p' && word[2].downcase == 'r'
         word = "#{word}#{word[0]}#{word[1]}#{word[2]}ay"
         word[0] = ''
-        word[1] = ''
-        word[2] = ''
+        word[0] = ''
+        word[0] = ''
       else
         word = "#{word}#{word[0]}ay"
         word[0] = ''
