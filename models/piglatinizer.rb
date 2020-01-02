@@ -1,7 +1,7 @@
 class PigLatinizer
   
   def piglatinize(text)
-    piglatinized_text = ""
+    piglatinized_text = []
     words = text.split(' ')
     
     words.each do |word|
@@ -9,10 +9,12 @@ class PigLatinizer
         word = "#{word}way"
       elsif word[0].downcase == 'p'
         if word[1].downcase == 'l' || word[1].downcase == 'r'
-          word = "#{word}"
+          word = "#{word}#{word[0]}#{word[1]}"
+          word[0] = ''
+          word[1] = ''
       end
       puts word
-      piglatinized_text += word
+      piglatinized_text << word
     end
     
     return piglatinized_text
