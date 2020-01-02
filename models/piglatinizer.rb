@@ -29,7 +29,7 @@ class PigLatinizer
         word = "#{word}#{word[0]}ay"
         word[0] = ''
       end
-      piglatinized_text << word
+      piglatinized_text << word.downcase
     end
     
     return piglatinized_text.join(' ')
