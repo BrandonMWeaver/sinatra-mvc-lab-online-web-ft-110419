@@ -16,14 +16,14 @@ class PigLatinizer
           word = "#{word}#{word[0]}ay"
           word[0] = ''
         end
-        elsif word[0].downcase == 's' && word[1].downcase == 'p' && word[2].downcase == 'r'
-          word = "#{word}#{word[0]}#{word[1]}#{word[2]}ay"
-          word[0] = ''
-          word[1] = ''
-          word[2] = ''
-        else
-          word = "#{word}#{word[0]}ay"
-          word[0] = ''
+      elsif word[0].downcase == 's' && word[1].downcase == 'p' && word[2].downcase == 'r'
+        word = "#{word}#{word[0]}#{word[1]}#{word[2]}ay"
+        word[0] = ''
+        word[1] = ''
+        word[2] = ''
+      else
+        word = "#{word}#{word[0]}ay"
+        word[0] = ''
       end
       piglatinized_text << word
     end
