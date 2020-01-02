@@ -21,8 +21,10 @@ class PigLatinizer
           word[0] = ''
           word[1] = ''
           word[2] = ''
+        else
+          word = "#{word}#{word[0]}ay"
+          word[0] = ''
       end
-      puts word
       piglatinized_text << word
     end
     
